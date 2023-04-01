@@ -9,7 +9,10 @@ function updateProgress() {
   document.getElementById("text").innerHTML =
     "Ładujemy wiosnę: " + percent.toFixed(1) + "% Zakończono";
   current++;
-  if (current <= total) {
-    setTimeout(updateProgress, 100);
+  if (current >= total) {
+    current = 0; // ustawiamy licznik na zero, aby pasek postępu zaczął się od początku
   }
+  setTimeout(updateProgress, 100);
 }
+
+updateProgress();
