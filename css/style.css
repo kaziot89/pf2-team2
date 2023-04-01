@@ -116,6 +116,10 @@ aside {
 .links ul li {
   margin-bottom: 10px;
 }
+.links ul li img {
+  max-width: 200px;
+  max-width: 200px;
+}
 
 /* Footer */
 
