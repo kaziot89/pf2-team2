@@ -1,0 +1,134 @@
+/* Reguły CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+    /*poczytac jako homework */
+}
+
+/* Body */
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container */
+#container{
+    max-width: 1000px;
+    border: 2px solid black;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.877);
+}
+
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* Brand */
+.brand a, .brand img{
+    display: block;
+}
+
+/* Menu */
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color:black;
+    padding: 10px 15px;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background-color: rgb(56, 213, 24);
+    color: rgb(255, 255, 255,1);
+}
+
+/* Slider */
+.slider img{
+    display: block;
+}
+
+/* Main */
+main{
+    display: flex;
+}
+
+/* Article */
+article{
+    width: 70%;
+    padding: 30px;
+}
+
+article img{
+    padding-right: 30px;
+}
+
+/* Aside */
+aside{
+    width: 30%;
+    padding: 20px;
+    background-color: lightgray;
+    border-left: 1px dashed black;
+}
+
+.widget{
+    margin-bottom: 50px;
+}
+
+.widget img{
+    float: left;
+    /* padding: 0 10px 5px 0; -alternatywne rozw w przypadku braku borderu */
+    margin: 0 10px 5px 0;
+    border: 5px solid red;
+}
+
+/* Links */
+
+.links ul{
+    list-style-type: square;
+    padding-left: 18px;
+    margin: 0;
+}
+
+.links ul li{
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer{
+    background-color: lightgray;
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 25px 0;
+}
+
+footer p{
+    margin:0;
+    text-shadow: 2px 2px darkgray;
+}
